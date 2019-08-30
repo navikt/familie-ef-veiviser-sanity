@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "project": {
+    "name": "veiviser"
+  },
+  "api": {
+    "projectId": "8wpntadz",
+    "dataset": "questions"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}
