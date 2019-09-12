@@ -4,19 +4,19 @@ export default {
     title: 'Spørsmål',
     fields: [
     {
-      name: 'spormalstekst',
+      name: 'sporsmal_tekst',
       type: 'string',
       title: 'Spørsmålstekst',
     },
     {
-      name: 'sporsmalstype',
+      name: 'hjelpetekst_overskrift',
       type: 'string',
-      title: 'Spørsmålstype',
-      description: 'Vanligvis flervalg. Kan kun være ett "Inntekt" og ett "Barnets alder"-spørsmål.',
-      options: {
-        list: ['Flervalg', 'Inntekt', 'Barnets alder'],
-        layout: 'radio'
-      },
+      title: 'Hjelpetekst overskrift',
+    },
+    {
+      name: 'hjelpetekst',
+      type: 'string',
+      title: 'Hjelpetekst innhold',
     },
     {
       name: 'sporsmal_id',
@@ -25,7 +25,7 @@ export default {
     },
     {
       title: 'Svar',
-      name: 'answer_array',
+      name: 'svarliste',
       type: 'array',
       of: [{type: 'answer'}]
     }

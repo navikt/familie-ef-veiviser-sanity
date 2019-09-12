@@ -4,7 +4,7 @@ export default {
   title: 'Svar',
   fields: [
     {
-      name: 'svartekst',
+      name: 'tekst',
       type: 'string',
       title: 'Svartekst'
     },
