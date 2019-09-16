@@ -6,6 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import answer from './answer';
 import question from './question';
 import information from './information';
+import header from './header';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -15,8 +16,9 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    header,
     question,
     answer,
-    information
+    information,
   ])
 })
