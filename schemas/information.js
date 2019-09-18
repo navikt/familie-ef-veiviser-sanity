@@ -4,11 +4,6 @@ export default {
   title: 'Informasjonsfelt',
   fields: [
     {
-      name: 'information_id',
-      type: 'number',
-      title: 'ID'
-    },
-    {
       name: 'informasjonsfelt',
       type: 'markdown',
       title: 'Informasjonsfelt',

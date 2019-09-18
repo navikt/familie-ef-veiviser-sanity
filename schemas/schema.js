@@ -8,6 +8,7 @@ import question from './question';
 import information from './information';
 import header from './header';
 import headline from './headline';
+import main_information_box from './main_information_box';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,6 +22,7 @@ export default createSchema({
     question,
     answer,
     information,
-    headline
+    headline,
+    main_information_box
   ])
 })
