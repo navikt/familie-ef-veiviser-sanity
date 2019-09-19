@@ -1,5 +1,5 @@
 export default {
-    name: 'question',
+    name: 'sporsmal',
     type: 'document',
     title: 'Spørsmål',
     fields: [
@@ -27,7 +27,7 @@ export default {
       title: 'Svar',
       name: 'svarliste',
       type: 'array',
-      of: [{type: 'answer'}]
+      of: [{type: 'svar'}]
     }
   ]
 }

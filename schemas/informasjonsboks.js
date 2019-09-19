@@ -1,7 +1,7 @@
 export default {
-  name: 'main_information_box',
+  name: 'informasjonsboks',
   type: 'document',
-  title: 'Hovedsvar',
+  title: 'Informasjonsboks',
   fields: [
     {
       name: 'information_ID',
@@ -9,12 +9,12 @@ export default {
       title: 'Informasjonsboks-ID'
     },
     {
-      name: 'overskrifter',
+      name: 'titles',
       type: 'array',
-      title: 'Overskrifter',
+      title: 'Undertitler',
       of: [{
         type: 'reference',
-        to: [{type: 'headline'}]
+        to: [{type: 'undertittel'}]
       }]
     }
   ]

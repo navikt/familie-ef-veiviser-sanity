@@ -1,5 +1,5 @@
 export default {
-  name: 'answer',
+  name: 'svar',
   type: 'object',
   title: 'Svar',
   fields: [

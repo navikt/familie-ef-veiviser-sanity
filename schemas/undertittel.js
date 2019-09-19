@@ -1,25 +1,25 @@
 export default {
-  name: 'headline',
+  name: 'undertittel',
   type: 'document',
-  title: 'Overskrift',
+  title: 'Undertittel',
   fields: [
     {
       name: 'tekst_i_liste',
       type: 'string',
-      title: 'Overskrift som vises i liste',
+      title: 'Undertittel som vises i liste',
     },
     {
       name: 'tekst_i_panel',
       type: 'string',
-      title: 'Overskrift som vises i panel',
+      title: 'Undertittel som vises i panel',
     },
     {
       name: 'undertekst',
       type: 'array',
-      title: 'Informasjonsfelter',
+      title: 'Brødtekst',
       of: [{
         type: 'reference',
-        to: [{type: 'information'}]
+        to: [{type: 'brodtekst'}]
       }]
     }
   ]
