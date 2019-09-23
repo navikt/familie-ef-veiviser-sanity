@@ -4,12 +4,12 @@ export default {
   title: 'Informasjonsboks',
   fields: [
     {
-      name: 'information_ID',
+      name: 'information_id',
       type: 'number',
       title: 'Informasjonsboks-ID'
     },
     {
-      name: 'titles',
+      name: 'undertitler',
       type: 'array',
       title: 'Undertitler',
       of: [{

@@ -14,7 +14,7 @@ export default {
       title: 'Undertittel som vises i panel',
     },
     {
-      name: 'undertekst',
+      name: 'brodtekster',
       type: 'array',
       title: 'Brødtekst',
       of: [{
