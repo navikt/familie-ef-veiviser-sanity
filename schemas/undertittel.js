@@ -21,6 +21,11 @@ export default {
         type: 'reference',
         to: [{type: 'brodtekst'}]
       }]
-    }
+    },
+    {
+      name: 'knapp',
+      type: 'knapp',
+      title: 'Knapp'
+    },
   ]
 }
