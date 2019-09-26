@@ -15,7 +15,7 @@ export default {
     },
     {
       name: 'hjelpetekst',
-      type: 'string',
+      type: 'markdown',
       title: 'Hjelpetekst innhold',
     },
     {
