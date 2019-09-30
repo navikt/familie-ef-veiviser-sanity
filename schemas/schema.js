@@ -25,6 +25,6 @@ export default createSchema({
     informasjonsboks,
     undertittel,
     brodtekst,
-    knapp
+    knapp,
   ])
 })

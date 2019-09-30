@@ -7,6 +7,7 @@ export default {
       name: 'body',
       type: 'markdown',
       title: 'Brødtekst',
+      validation: Rule => Rule.required(),
     }
   ]
 }

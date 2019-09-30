@@ -19,13 +19,13 @@ export default {
       title: 'Brødtekst',
       of: [{
         type: 'reference',
-        to: [{type: 'brodtekst'}]
+        to: [{type: 'brodtekst'}],
       }]
     },
     {
       name: 'knapp',
       type: 'knapp',
-      title: 'Knapp'
+      title: 'Knapp',
     },
   ]
 }

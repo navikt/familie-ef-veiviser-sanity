@@ -7,6 +7,7 @@ export default {
       name: 'sporsmal_tekst',
       type: 'string',
       title: 'Spørsmålstekst',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'hjelpetekst_overskrift',
@@ -21,13 +22,15 @@ export default {
     {
       name: 'sporsmal_id',
       type: 'number',
-      title: 'Spørsmåls-ID'
+      title: 'Spørsmåls-ID',
+      validation: Rule => Rule.required(),
     },
     {
       title: 'Svar',
       name: 'svarliste',
       type: 'array',
-      of: [{type: 'svar'}]
+      of: [{type: 'svar'}],
+      validation: Rule => Rule.required(),
     }
   ]
 }

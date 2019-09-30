@@ -6,7 +6,8 @@ export default {
     {
       name: 'information_id',
       type: 'number',
-      title: 'Informasjonsboks-ID'
+      title: 'Informasjonsboks-ID',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'undertitler',
@@ -14,8 +15,9 @@ export default {
       title: 'Undertitler',
       of: [{
         type: 'reference',
-        to: [{type: 'undertittel'}]
-      }]
+        to: [{type: 'undertittel'}],
+      }],
+      validation: Rule => Rule.required(),
     }
   ]
 }

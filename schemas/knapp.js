@@ -6,12 +6,12 @@ export default {
     {
       name: 'tekst',
       type: 'string',
-      title: 'Tekst'
+      title: 'Tekst',
     },
     {
       name: 'lenke',
       type: 'string',
-      title: 'Lenke'
+      title: 'Lenke',
     }
   ]
 }
