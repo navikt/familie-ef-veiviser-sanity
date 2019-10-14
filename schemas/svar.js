@@ -1,6 +1,6 @@
 export default {
   name: 'svar',
-  type: 'object',
+  type: 'document',
   title: 'Svar',
   fields: [
     {
@@ -20,6 +20,18 @@ export default {
       title: 'IDen til spørsmålet man går til ved valg av dette svaret',
       description: 'Dersom du har valgt at man er ferdig etter dette spørsmålet, går man til informasjonsteksten med denne IDen istedenfor spørsmålet.',
       validation: Rule => Rule.required(),
-    }
-  ]
+    },
+    {
+      name: 'sporsmalstekst',
+      type: 'string',
+      title: 'Spørsmålstekst',
+      description: 'Har ingen funksjon, men kan brukes for å kjenne igjen svaret i listen når det er like svar på forskjellige spørsmål.',
+    },
+  ],
+  preview: {
+    select: {
+      title: 'tekst',
+      subtitle: 'sporsmalstekst'
+  }
+  }
 }

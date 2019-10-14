@@ -29,7 +29,10 @@ export default {
       title: 'Svar',
       name: 'svarliste',
       type: 'array',
-      of: [{type: 'svar'}],
+      of: [{
+        type: 'reference',
+        to: [{type: 'svar'}],
+      }],
       validation: Rule => Rule.required(),
     }
   ]

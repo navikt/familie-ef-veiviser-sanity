@@ -27,5 +27,19 @@ export default {
       type: 'knapp',
       title: 'Knapp',
     },
-  ]
+  ],
+  preview: {
+    select: {
+      title: 'tekst_i_panel',
+      brodtekst_1: 'brodtekster.0.body'
+    },
+    prepare(selection) {
+      const {title, brodtekst_1} = selection;
+
+      return {
+        title: title,
+        subtitle: brodtekst_1
+      }
+    }
+  }
 }
