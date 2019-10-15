@@ -28,7 +28,7 @@ export default {
     {
       name: 'svarsti',
       type: 'array',
-      title: 'Liste over spørsmål som skal føre til dette svaret',
+      title: 'Liste over svarene som skal føre til denne informasjonsboksen',
       of: [{
         type: 'reference',
         to: [{type: 'svar'}],
