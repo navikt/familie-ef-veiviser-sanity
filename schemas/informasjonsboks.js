@@ -24,6 +24,15 @@ export default {
         to: [{type: 'undertittel'}],
       }],
       validation: Rule => Rule.required(),
+    },
+    {
+      name: 'svarsti',
+      type: 'array',
+      title: 'Liste over spørsmål som skal føre til dette svaret',
+      of: [{
+        type: 'reference',
+        to: [{type: 'svar'}],
+      }],
     }
   ]
 }

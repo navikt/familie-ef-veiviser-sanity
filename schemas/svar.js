@@ -15,6 +15,11 @@ export default {
       type: 'boolean'
     },
     {
+      title: 'Er man ferdig OG har kommet seg gjennom alle spørsmålene om man svarer dette?',
+      name: 'done_complete',
+      type: 'boolean'
+    },
+    {
       name: 'goto',
       type: 'number',
       title: 'IDen til spørsmålet man går til ved valg av dette svaret',
