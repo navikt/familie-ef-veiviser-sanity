@@ -14,6 +14,11 @@ export default {
       title: 'Undertittel som vises i liste',
     },
     {
+      title: 'Check denne hvis dette er noe man ikke har rett til',
+      name: 'ikke_rett_til',
+      type: 'boolean'
+    },
+    {
       name: 'brodtekster',
       type: 'array',
       title: 'Brødtekst',
@@ -26,19 +31,31 @@ export default {
       name: 'knapp',
       type: 'knapp',
       title: 'Knapp',
-    },
+    }
   ],
   preview: {
     select: {
-      title: 'tekst_i_panel',
-      brodtekst_1: 'brodtekster.0.body'
+      tekst_i_panel: 'tekst_i_panel',
+      tekst_i_liste: 'tekst_i_liste',
+      ikke_rett_til: 'ikke_rett_til',
+      brodtekst_1: 'brodtekster.0.body',
     },
     prepare(selection) {
-      const {title, brodtekst_1} = selection;
+      const {tekst_i_panel, tekst_i_liste, brodtekst_1, ikke_rett_til} = selection;
+
+      let title = tekst_i_panel ? tekst_i_panel : tekst_i_liste;
+      let subtitle = brodtekst_1;
+
+      if (ikke_rett_til) title = "Ikke rett til " + title;
+
+      if (!title) {
+        title = brodtekst_1;
+        subtitle = 'BARE BRØDTEKST';
+      };
 
       return {
         title: title,
-        subtitle: brodtekst_1
+        subtitle: subtitle
       }
     }
   }
