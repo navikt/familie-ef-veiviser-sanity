@@ -10,6 +10,7 @@ import header from './header';
 import undertittel from './undertittel';
 import informasjonsboks from './informasjonsboks';
 import knapp from './knapp';
+import disclaimer from './disclaimer';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,6 +21,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     header,
+    disclaimer,
     sporsmal,
     svar,
     informasjonsboks,

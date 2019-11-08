@@ -14,9 +14,9 @@ export default {
       type: 'string',
       title: 'Hjelpetekst overskrift',
     },
-    {
-      name: 'hjelpetekst',
-      type: 'markdown',
+      {
+        name: 'hjelpetekst',
+        type: 'markdown',
       title: 'Hjelpetekst innhold',
     },
     {
