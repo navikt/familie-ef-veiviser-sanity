@@ -9,8 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy Sanity
     steps:
-      - uses: actions/checkout@v4
-      - uses: sanity-io/github-action-sanity@v0.4-alpha
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: yarn
+      - name: Yarn install
+        run: yarn --prefer-offline --frozen-lockfile
+      - uses: sanity-io/github-action-sanity@v0.5-alpha
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOY_TOKEN }}
         with:
