@@ -1,5 +1,14 @@
 # Sanity Clean Content Studio
 
+## Deploye
+Deployes manuelt ved merge til master
+
+### Manuell deploy
+1. Lag et token i sanity studio
+   2. Velg API fanen -> bla ned til tokens -> trykk på Add API Token
+2. Kjør `export SANITY_AUTH_TOKEN=....` lokalt
+3. Kjør `sanity deploy` 
+
 Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
 
 Now you can do the following things:
