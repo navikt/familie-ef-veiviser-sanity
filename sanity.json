@@ -5,12 +5,20 @@
   },
   "api": {
     "projectId": "8wpntadz",
-    "dataset": "questions"
+    "dataset": "prod-v2023"
   },
   "__experimental_spaces": [
     {
       "name": "prod",
-      "title": "Prod",
+      "title": "Prod (v2023)",
+      "default": true,
+      "api": {
+        "projectId": "8wpntadz",
+        "dataset": "prod-v2023"
+      }
+    },{
+      "name": "prod",
+      "title": "Prod (pre 2023-11)",
       "default": true,
       "api": {
         "projectId": "8wpntadz",
