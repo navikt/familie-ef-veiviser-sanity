@@ -1,7 +1,7 @@
 # Sanity Clean Content Studio
 
 ## Deploye
-Deployes manuelt ved merge til master
+Deployes manuelt ved merge til main
 
 ### Manuell deploy
 1. Lag et token i sanity studio
