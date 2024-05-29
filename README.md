@@ -4,8 +4,6 @@
 
 Deployes manuelt ved merge til main
 
-<!-- ### Manuell deploy
+### Kjøre lokalt
 
-1. Lag et token i sanity studio 2. Velg API fanen -> bla ned til tokens -> trykk på Add API Token
-2. Kjør `export SANITY_AUTH_TOKEN=....` lokalt
-3. Kjør `sanity deploy` -->
+- Kjør `yarn dev` for å starte applikasjonen på `http://localhost:3333/`.

@@ -7,9 +7,6 @@
   "author": "Asbjørn Ottesen Steinskog <asbjorn@steinskog.me>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
-    "test": "sanity check",
-    "build": "sanity build",
     "dev": "sanity dev"
   },
   "keywords": [
