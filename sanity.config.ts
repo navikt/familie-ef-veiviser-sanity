@@ -1,4 +1,4 @@
-import { defineConfig, definePlugin } from "sanity";
+import { AuthConfig, defineConfig, definePlugin } from "sanity";
 import { structureTool } from "sanity/structure";
 import schemas from "./schemas/schema";
 import { visionTool } from "@sanity/vision";
@@ -13,6 +13,18 @@ const sharedConfig = definePlugin({
   },
 });
 
+const auth: AuthConfig = {
+  redirectOnSingle: true,
+  providers: () => [
+    {
+      name: "saml",
+      title: "NAV SSO",
+      url: "https://api.sanity.io/v2021-10-01/auth/saml/login/f3270b37",
+      logo: "/static/navlogo.svg",
+    },
+  ],
+};
+
 export default defineConfig([
   {
     name: "prod",
@@ -21,6 +33,7 @@ export default defineConfig([
     dataset: "prod-v2023",
     plugins: [sharedConfig()],
     basePath: "/prod",
+    auth: auth,
   },
   {
     name: "tidligereprod",
@@ -29,6 +42,7 @@ export default defineConfig([
     dataset: "questions",
     plugins: [sharedConfig()],
     basePath: "/tidligereprod",
+    auth: auth,
   },
   {
     name: "test",
@@ -37,5 +51,6 @@ export default defineConfig([
     dataset: "test",
     plugins: [sharedConfig()],
     basePath: "/test",
+    auth: auth,
   },
 ]);
