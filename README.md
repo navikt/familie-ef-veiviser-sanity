@@ -4,6 +4,10 @@
 
 Deployes manuelt ved merge til main
 
+### Installere Sanity
+
+- Kjør `npm install -g @sanity/cli` i terminalen.
+
 ### Kjøre lokalt
 
 - Kjør `yarn` for å installere alle npm-pakkene.
