@@ -35,22 +35,4 @@ export default defineConfig([
     basePath: "/prod",
     auth: auth,
   },
-  {
-    name: "tidligereprod",
-    title: "Prod (pre 2023-11)",
-    projectId: PROSJEKT_ID,
-    dataset: "questions",
-    plugins: [sharedConfig()],
-    basePath: "/tidligereprod",
-    auth: auth,
-  },
-  {
-    name: "test",
-    title: "Test",
-    projectId: PROSJEKT_ID,
-    dataset: "test",
-    plugins: [sharedConfig()],
-    basePath: "/test",
-    auth: auth,
-  },
 ]);
