@@ -22,6 +22,6 @@ jobs:
         run: yarn --prefer-offline --frozen-lockfile
       - uses: sanity-io/github-action-sanity@v0.7-alpha
         env:
-          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOY_TOKEN }}
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOY_TOKEN_NY }}
         with:
           args: deploy
