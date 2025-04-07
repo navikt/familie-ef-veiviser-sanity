@@ -22,8 +22,11 @@ jobs:
       - name: Yarn install
         run: yarn --prefer-offline --frozen-lockfile
 
-      - name: Installer sanity
-        run: yarn global add @sanity/cli && sanity install
+      - name: Add sanity
+        run: yarn global add @sanity/cli
+
+      - name: Sanity install
+        run: sanity install
 
       - name: Deploy sanity
         env:
