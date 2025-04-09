@@ -18,10 +18,17 @@ jobs:
         with:
           node-version: "20"
           cache: yarn
+
       - name: Yarn install
         run: yarn --prefer-offline --frozen-lockfile
-      - uses: sanity-io/github-action-sanity@v0.7-alpha
+
+      - name: Add sanity
+        run: yarn global add @sanity/cli
+
+      - name: Sanity install
+        run: sanity install
+
+      - name: Deploy sanity
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOY_TOKEN_NY }}
-        with:
-          args: deploy
+        run: sanity deploy
