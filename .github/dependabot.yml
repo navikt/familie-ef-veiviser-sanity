@@ -15,7 +15,7 @@ updates:
     open-pull-requests-limit: 30
     registries: "*"
     versioning-strategy: increase
-    assignees:
+    reviewers:
       - "gunnsteingarmo"
     ignore:
       - dependency-name: "*"
