@@ -15,8 +15,8 @@ updates:
     open-pull-requests-limit: 30
     registries: "*"
     versioning-strategy: increase
-    reviewers:
-      - "gunnsteingarmo"
+    labels:
+      - "dependabot update"
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
