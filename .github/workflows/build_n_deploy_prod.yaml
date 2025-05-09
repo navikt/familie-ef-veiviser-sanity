@@ -32,3 +32,12 @@ jobs:
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOY_TOKEN_NY }}
         run: sanity deploy
+
+  labeler:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    name: Labeler pull request
+    steps:
+      - uses: actions/labeler@v5
