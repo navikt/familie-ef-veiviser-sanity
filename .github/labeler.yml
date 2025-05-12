@@ -1,0 +1,3 @@
+slack notification:
+  - changed-files:
+      - any-glob-to-any-file: "**"
