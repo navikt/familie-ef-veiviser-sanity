@@ -12,3 +12,5 @@ Deployes manuelt ved merge til main
 
 - Kjør `yarn` for å installere alle npm-pakkene.
 - Kjør `yarn dev` for å starte applikasjonen på `http://localhost:3333/`.
+
+labeler
