@@ -1,10 +1,10 @@
 {
-  "name": "veiviser",
+  "name": "familie-ef-veiviser",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Asbjørn Ottesen Steinskog <asbjorn@steinskog.me>",
+  "author": "Nav - teamfamilie",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity dev"
@@ -15,11 +15,9 @@
   "dependencies": {
     "@sanity/ui": "^3.1.8",
     "@sanity/vision": "^4.10.1",
-    "prop-types": "^15.8.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "sanity": "^4.10.1",
-    "sanity-plugin-markdown": "^5.1.3",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {}
