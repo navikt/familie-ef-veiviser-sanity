@@ -18,7 +18,7 @@ jobs:
         run: npm ci
 
       - name: sanity Build
-        run: sanity build
+        run: npm build
 
       - name: Validate Sanity schema
         run: npx sanity schema validate
