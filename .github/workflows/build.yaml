@@ -1,4 +1,4 @@
-name: Pull request
+name: Build
 on:
   pull_request:
     branches:
@@ -12,7 +12,13 @@ jobs:
       - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # ratchet:actions/setup-node@v4
         with:
           node-version: "20"
-          cache: yarn
+          cache: npm
 
-      - name: Yarn install
-        run: yarn --prefer-offline --frozen-lockfile
+      - name: npm install
+        run: npm ci
+
+      - name: sanity Build
+        run: npm run build
+
+      - name: Validate Sanity schema
+        run: npx sanity schema validate
