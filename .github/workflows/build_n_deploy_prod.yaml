@@ -19,13 +19,7 @@ jobs:
       - name: npm install
         run: npm ci
 
-      - name: Add sanity
-        run: npm install -g @sanity/cli
-
-      - name: Sanity install
-        run: sanity install
-
       - name: Deploy sanity
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOY_TOKEN }}
-        run: sanity deploy
+        run: npm run deploy
